@@ -1,0 +1,146 @@
+[
+  {
+    "CODIGOCAUSA": 1109,
+    "DESCRIPCIONCAUSA": "1109 - Push botton dañado",
+    "DESCRIPCIONTIPODAÑO": "187825 - Modem ONT dañado",
+    "DESCRIPCIONUBICACIONDAÑO": "123 - ONT DAÑADO"
+  },
+  {
+    "CODIGOCAUSA": 1110,
+    "DESCRIPCIONCAUSA": "1110 - ONT no enciende",
+    "DESCRIPCIONTIPODAÑO": "187825 - Modem ONT dañado",
+    "DESCRIPCIONUBICACIONDAÑO": "123 - ONT DAÑADO"
+  },
+  {
+    "CODIGOCAUSA": 1111,
+    "DESCRIPCIONCAUSA": "1111 - Se reconfigura IP",
+    "DESCRIPCIONTIPODAÑO": "187826 - Reconfiguracion en sitio ONT",
+    "DESCRIPCIONUBICACIONDAÑO": "124 - ONT DESCONFIGURADO"
+  },
+  {
+    "CODIGOCAUSA": 1112,
+    "DESCRIPCIONCAUSA": "1112 - Acometida fibra optica cortada",
+    "DESCRIPCIONTIPODAÑO": "187827 - Re empalme de fibra optica con mufa continuidad",
+    "DESCRIPCIONUBICACIONDAÑO": "2 - Red de Acometida"
+  },
+  {
+    "CODIGOCAUSA": 1115,
+    "DESCRIPCIONCAUSA": "1115 - CTO dañada",
+    "DESCRIPCIONTIPODAÑO": "187831 - Sustitucion de CTO",
+    "DESCRIPCIONUBICACIONDAÑO": "127 - Caja Terminal optica"
+  },
+  {
+    "CODIGOCAUSA": 1116,
+    "DESCRIPCIONCAUSA": "1116 - Splitter optico dañado",
+    "DESCRIPCIONTIPODAÑO": "187832 - Sustitucion de splitter",
+    "DESCRIPCIONUBICACIONDAÑO": "127 - Caja Terminal optica"
+  },
+  {
+    "CODIGOCAUSA": 9523,
+    "DESCRIPCIONCAUSA": "9523 - Falla Masiva",
+    "DESCRIPCIONTIPODAÑO": "187834 - Nodo fuera de servicio",
+    "DESCRIPCIONUBICACIONDAÑO": "129 - CDO"
+  },
+  {
+    "CODIGOCAUSA": 1117,
+    "DESCRIPCIONCAUSA": "1117 - CDO Dañado",
+    "DESCRIPCIONTIPODAÑO": "187833 - Mantenimiento en CDO",
+    "DESCRIPCIONUBICACIONDAÑO": "128 - Mantenimiento en CDO"
+  },
+  {
+    "CODIGOCAUSA": 7023,
+    "DESCRIPCIONCAUSA": "7023 - Problemas con PC del cliente",
+    "DESCRIPCIONTIPODAÑO": "187836 - Problemas con PC del cliente, sistema operativo o hardware",
+    "DESCRIPCIONUBICACIONDAÑO": "12 - PC del Cliente"
+  },
+  {
+    "CODIGOCAUSA": 9417,
+    "DESCRIPCIONCAUSA": "9417 - Red Lan del cliente con Problemas",
+    "DESCRIPCIONTIPODAÑO": "187837 - Red LAN de cliente requiere revision",
+    "DESCRIPCIONUBICACIONDAÑO": "101 - LAN del Cliente"
+  },
+  {
+    "CODIGOCAUSA": 9427,
+    "DESCRIPCIONCAUSA": "9427 - Se reordenaron conexiones internas",
+    "DESCRIPCIONTIPODAÑO": "187519 - CABLEADO INTERNO DEL CLIENTE",
+    "DESCRIPCIONUBICACIONDAÑO": "101 - LAN del Cliente"
+  },
+  {
+    "CODIGOCAUSA": 1119,
+    "DESCRIPCIONCAUSA": "1119 - Cobertura wifi",
+    "DESCRIPCIONTIPODAÑO": "187838 - Extensor/ Repetidor del cliente dañado",
+    "DESCRIPCIONUBICACIONDAÑO": "131 - WLAN del cliente"
+  },
+  {
+    "CODIGOCAUSA": 9209,
+    "DESCRIPCIONCAUSA": "9209 - No permite ingreso a Domicilio",
+    "DESCRIPCIONTIPODAÑO": "187745 - NO PERMITEN EL INGRESO A DOMICILIO",
+    "DESCRIPCIONUBICACIONDAÑO": "133 - CLIENTE"
+  },
+  {
+    "CODIGOCAUSA": 9429,
+    "DESCRIPCIONCAUSA": "9429 - Cliente informa que Cancelo el Servicio",
+    "DESCRIPCIONTIPODAÑO": "187839 - Servicio Suspendido",
+    "DESCRIPCIONUBICACIONDAÑO": "133 - CLIENTE"
+  },
+  {
+    "CODIGOCAUSA": 9416,
+    "DESCRIPCIONCAUSA": "9416 - Cliente no Localizado",
+    "DESCRIPCIONTIPODAÑO": "187740 - NO SE LOCALIZA CLIENTE (3 VISITA O 2 CITAS)",
+    "DESCRIPCIONUBICACIONDAÑO": "133 - CLIENTE"
+  },
+  {
+    "CODIGOCAUSA": 9136,
+    "DESCRIPCIONCAUSA": "9136 - CASA CERRADA",
+    "DESCRIPCIONTIPODAÑO": "187740 - NO SE LOCALIZA CLIENTE (3 VISITA O 2 CITAS)",
+    "DESCRIPCIONUBICACIONDAÑO": "133 - CLIENTE"
+  },
+  {
+    "CODIGOCAUSA": 265,
+    "DESCRIPCIONCAUSA": "265 - PROBLEMA DE ENERGIA DOMICILIAR",
+    "DESCRIPCIONTIPODAÑO": "187625 - PROBLEMA DE ENERGIA DOMICILIAR",
+    "DESCRIPCIONUBICACIONDAÑO": "133 - CLIENTE"
+  },
+  {
+    "CODIGOCAUSA": 9408,
+    "DESCRIPCIONCAUSA": "9408 - Ya se encontraba Navegando",
+    "DESCRIPCIONTIPODAÑO": "187592 - REVISADO SIN FALLA CON AVISO",
+    "DESCRIPCIONUBICACIONDAÑO": "999 - INFUNDADO"
+  },
+  {
+    "CODIGOCAUSA": 1615,
+    "DESCRIPCIONCAUSA": "1615 - FALLA INFUNDADA ABONADO OK",
+    "DESCRIPCIONTIPODAÑO": "187592 - REVISADO SIN FALLA CON AVISO",
+    "DESCRIPCIONUBICACIONDAÑO": "999 - INFUNDADO"
+  },
+  {
+    "CODIGOCAUSA": 5527,
+    "DESCRIPCIONCAUSA": "5527 - SERVICIO MAL APROVISIONADO",
+    "DESCRIPCIONTIPODAÑO": "187794 - SERVICIO MAL APROVISIONADO",
+    "DESCRIPCIONUBICACIONDAÑO": "118 - PLATAFORMA"
+  },
+  {
+    "CODIGOCAUSA": 298,
+    "DESCRIPCIONCAUSA": "298 - Perfil de velocidad mal aprovisionado",
+    "DESCRIPCIONTIPODAÑO": "187854 - FALLA DE SISTEMAS",
+    "DESCRIPCIONUBICACIONDAÑO": "8 - Central"
+  },
+  {
+    "CODIGOCAUSA": 297,
+    "DESCRIPCIONCAUSA": "297 - Falla de reconexion por el sistema",
+    "DESCRIPCIONTIPODAÑO": "187854 - FALLA DE SISTEMAS",
+    "DESCRIPCIONUBICACIONDAÑO": "8 - Central"
+  },
+  {
+    "CODIGOCAUSA": 367,
+    "DESCRIPCIONCAUSA": "367 Conector mecanico mal instalado / Dañado",
+    "DESCRIPCIONTIPODAÑO": "419 - Conector mecánico mal instalado",
+    "DESCRIPCIONUBICACIONDAÑO": "2 Red acometida"
+  },
+  {
+    "CODIGOCAUSA": 1124,
+    "DESCRIPCIONCAUSA": "1124 PROBLEMA DE ENERGIA DOMICILIAR",
+    "DESCRIPCIONTIPODAÑO": "187625 PROBLEMA DE ENERGIA DOMICILIAR",
+    "DESCRIPCIONUBICACIONDAÑO": "133 CLIENTE"
+  }  
+]
