@@ -36,10 +36,8 @@ class InstalacionController extends Controller
 
     public function getTecnico(Request $request, $codigo)
     {
-        // Buscar al técnico por su código
         $tecnico = Tecnico::where('codigo', $codigo)->first();
 
-        // Verificar si el técnico existe
         if ($tecnico) {
             // Verificar si el estado del técnico es "Activo"
             if ($tecnico->status === "Activo") {

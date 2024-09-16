@@ -15,10 +15,11 @@ class ProfileController extends Controller
         return view('users.passwordchange');
     }
 
-    // Procesar el cambio de contraseña
     
+
     public function changePassword(Request $request)
     {
+        // Definir mensajes de error personalizados
         $messages = [
             'current_password.required' => 'La contraseña actual es obligatoria.',
             'new_password.required' => 'La nueva contraseña es obligatoria.',
@@ -26,9 +27,9 @@ class ProfileController extends Controller
             'new_password.min' => 'La nueva contraseña debe tener al menos 8 caracteres.',
             'new_password.confirmed' => 'Las contraseñas nuevas deben coincidir.',
             'new_password.different' => 'La nueva contraseña no puede ser igual a la contraseña actual.',
-            'current_password.correct' => 'La contraseña actual es incorrecta.',
         ];
-
+    
+        // Validar los datos del request
         $validator = Validator::make($request->all(), [
             'current_password' => [
                 'required',
@@ -44,25 +45,25 @@ class ProfileController extends Controller
                 'string',
                 'min:8',
                 'confirmed',
-                function ($attribute, $value, $fail) {
-                    // Verifica si la nueva contraseña ingresada es igual a la contraseña actual
-                    if (Hash::check($value, Auth::user()->password)) {
-                        $fail('La nueva contraseña no puede ser igual a la contraseña actual.');
-                    }
-                },
+                'different:current_password',
             ],
         ], $messages);
-
+    
+        // Si la validación falla, retornar los errores
         if ($validator->fails()) {
             return response()->json(['errors' => $validator->errors()], 422);
         }
-
+    
+        // Actualizar la contraseña del usuario
         $user = Auth::user();
         $user->password = Hash::make($request->input('new_password'));
         $user->save();
-
+    
+        // Retornar una respuesta de éxito
         return response()->json(['message' => 'Contraseña actualizada con éxito.']);
     }
+
+
 
 
     // Procesar el reseteo de contraseña a un valor predeterminado
