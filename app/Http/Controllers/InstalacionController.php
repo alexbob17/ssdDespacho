@@ -21,9 +21,7 @@ class InstalacionController extends Controller
     // Método para mostrar el formulario de creación de instalaciones
     public function index()
     {
-        // Verificar si el usuario está autenticado
         if (!auth()->check()) {
-            // Redirigir al usuario al login si no está autenticado
             return redirect()->route('login');
         }
 
