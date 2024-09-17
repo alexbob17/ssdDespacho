@@ -54,13 +54,24 @@ class ProfileController extends Controller
             return response()->json(['errors' => $validator->errors()], 422);
         }
     
-        // Actualizar la contraseña del usuario
-        $user = Auth::user();
-        $user->password = Hash::make($request->input('new_password'));
-        $user->save();
+        try {
+            // Actualizar la contraseña del usuario
+            $user = Auth::user();
+            $user->password = Hash::make($request->input('new_password'));
+            $user->save();
     
-        // Retornar una respuesta de éxito
-        return response()->json(['message' => 'Contraseña actualizada con éxito.']);
+            // Registrar la actividad de cambio de contraseña (opcional)
+            activity()->causedBy($user)->log('Password changed');
+    
+            // Enviar notificación al usuario (opcional)
+             $user->notify(new PasswordChangedNotification());
+    
+            // Retornar una respuesta de éxito
+            return response()->json(['message' => 'Contraseña actualizada con éxito.']);
+        } catch (\Exception $e) {
+            // Manejar cualquier error inesperado
+            return response()->json(['error' => 'Ocurrió un error al actualizar la contraseña.'], 500);
+        }
     }
 
 

@@ -170,6 +170,8 @@ class TecnicoController extends Controller
      
 
 
+
+    // Editar técnico
     public function edit($id)
     {
         
@@ -254,6 +256,5 @@ class TecnicoController extends Controller
         return response()->json(['success' => true]);
     }
 
-    
-    
+
 }
