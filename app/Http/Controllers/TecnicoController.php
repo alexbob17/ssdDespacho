@@ -86,7 +86,7 @@ class TecnicoController extends Controller
             'nombre_tecnico' => $data['nombre_tecnico'],
             'codigo' => $data['codigo'],
             'numero' => $data['numero'],
-            'cedula' => $data['cedula'] ?? null, // Handle nullable
+            'cedula' => $data['cedula'] ?? null,
             'status' => $data['status'],
         ]);
     }
